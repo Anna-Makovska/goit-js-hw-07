@@ -7,20 +7,68 @@
     <title>Task 4</title>
     <link rel="stylesheet" href="./css/common.css" />
   </head>
-  <body>
+  <body class="container">
     <p><a href="./index.html">Go back</a></p>
 
     <form class="login-form">
-      <label>
+      <label class="label">
         Email
-        <input type="email" name="email" />
+        <input class="input" type="email" name="email" />
       </label>
-      <label>
+      <label class="label">
         Password
-        <input type="password" name="password" />
+        <input class= "input" type="password" name="password" />
       </label>
-      <button type="submit">Login</button>
+      <button class="btn-style"type="submit">Log in</button>
     </form>
+    <style>
+      .container {
+        width: 360px;
+        padding-top: 24px;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .label {
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.04em;
+text-align: left;
+display: flex;
+flex-direction: column;
+margin-bottom: 8px;
+color:#2E2F42;
+
+      }
+      .input {
+width: 360px;
+height: 40px;
+margin-bottom: 8px;
+
+      }
+      .btn-style {
+        background-color: #4E75FF;
+        color:white;
+        width: 86px;
+        height: 40px;
+        font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.04em;
+text-align: left;
+cursor: pointer;
+border:none;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+      }
+    </style>
 
     <script src="./js/task-4.js" type="module"></script>
   </body>

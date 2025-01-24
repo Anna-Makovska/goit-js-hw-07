@@ -7,42 +7,94 @@
     <title>Task 1</title>
     <link rel="stylesheet" href="./css/common.css" />
   </head>
-  <body>
+  <body class="container">
     <p><a href="./index.html">Go back</a></p>
 
     <ul id="categories">
       <li class="item">
         <h2>Animals</h2>
 
-        <ul>
-          <li>Cat</li>
-          <li>Hamster</li>
-          <li>Horse</li>
-          <li>Parrot</li>
+        <ul  class="head-list">
+          <li class="class-list">Cat</li>
+          <li class="class-list">Hamster</li>
+          <li class="class-list">Horse</li>
+          <li class="class-list">Parrot</li>
         </ul>
       </li>
       <li class="item">
+
         <h2>Products</h2>
 
-        <ul>
-          <li>Bread</li>
-          <li>Prasley</li>
-          <li>Cheese</li>
+        <ul class="head-list">
+          <li class="class-list">Bread</li>
+          <li class="class-list">Prasley</li>
+          <li class="class-list">Cheese</li>
         </ul>
       </li>
       <li class="item">
+
         <h2>Technologies</h2>
 
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js</li>
+        <ul class="head-list">
+          <li class="class-list">HTML</li>
+          <li class="class-list">CSS</li>
+          <li class="class-list">JavaScript</li>
+          <li class="class-list">React</li>
+          <li class="class-list">Node.js</li>
         </ul>
       </li>
+    
     </ul>
+<style> 
+.container {
+    max-width: 392px;
+    
 
+}
+
+ul {
+  list-style: none;
+padding: 0;
+margin: auto;
+}
+h2 {
+  padding: 16px;
+  font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0.04em;
+text-align: left;
+margin: 0;
+}
+
+
+  .item {
+  
+    margin-bottom: 24px;
+border-radius: 8px;
+    background-color:#F6F6FE;
+
+
+  }
+  .class-list {
+    width: 340px;
+border:  1px solid #808080;
+color: #2E2F42;
+padding: 8px 16px;
+margin-bottom: 8px;
+border-radius: 4px;
+
+
+  }
+  
+  .head-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
     <script src="./js/task-1.js" type="module"></script>
   </body>
 </html>
